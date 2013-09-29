@@ -23,13 +23,20 @@
 /******************************
  * Structures
  ******************************/
+enum job_type{
+    JOB_BACKGROUND,
+    JOB_FOREGROUND
+};
+
+typedef enum job_type job_type;
+
 struct job_t {
     char * full_command;
     int argc;
     char **argv;
+    job_type type;
 };
 typedef struct job_t job_t;
-
 
 /******************************
  * Global Variables

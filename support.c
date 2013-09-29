@@ -32,6 +32,12 @@ int split_input_into_jobs(char *input_str, int *num_jobs, job_t **loc_jobs)
         (*loc_jobs)[(*num_jobs)].full_command = strdup(str_ptr);
         (*loc_jobs)[(*num_jobs)].argc = 0;
         (*loc_jobs)[(*num_jobs)].argv = NULL;
+        
+        // Determine if the job should be ran in the background or foreground.
+        // TODO
+        (*loc_jobs)[(*num_jobs)].type = JOB_BACKGROUND;
+        // TODO
+        (*loc_jobs)[(*num_jobs)].type = JOB_FOREGROUND;
 
         /* Increment the number of jobs */
         (*num_jobs)++;
@@ -53,6 +59,11 @@ int split_job_into_args(job_t *loc_job)
     for( str_ptr = strtok(loc_job->full_command, " ");
          NULL   != str_ptr;
          str_ptr = strtok(NULL, " ") ) {
+         
+        /* Strip off the new line */
+        if( '\n' == str_ptr[ strlen(str_ptr) - 1] ) {
+            str_ptr[ strlen(str_ptr) - 1] = '\0';
+        }
 
         /*
          * Make a place for the new argument in the argv array
