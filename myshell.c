@@ -1,5 +1,5 @@
 /*
- * Ryan Gittin and Phillip Sime
+ * Ryan Gittins and Phillip Sime
  *
  * CS441: Project 1 Part 1
  *
