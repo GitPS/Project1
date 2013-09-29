@@ -34,16 +34,6 @@ struct argument_t{
 
 typedef struct argument_t argument_t;
 
-/*
- * Enumerated type for shell mode.
- */
-enum shell_mode{
-    MODE_BATCH,
-    MODE_INTERACTIVE
-};
-
-typedef enum shell_mode shell_mode;
-
 /******************************
  * Global Variables
  ******************************/

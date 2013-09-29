@@ -11,16 +11,8 @@ int main(int argc, char * argv[]) {
 	shell_mode mode;
 	char shell_name[16] = "myshell$";
 	
-	// Set shell mode
-	if(argc < 2){
-		mode = MODE_INTERACTIVE;		
-	}
-	else{
-		mode = MODE_BATCH;
-	}
-	
 	// Start shell in interactive mode.
-	if(mode == MODE_INTERACTIVE){
+	if(argc < 2){
 		start_interactive_shell(shell_name, argv);		
 	}	
 	
