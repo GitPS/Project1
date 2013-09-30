@@ -8,7 +8,6 @@
 
 int main(int argc, char * argv[]) {
 
-	shell_mode mode;
 	char shell_name[16] = "myshell$";
 	
 	// Start shell in interactive mode.
