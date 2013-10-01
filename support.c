@@ -1,19 +1,44 @@
 /*
- * Josh Hursey
- * Feb. 11, 2013
+ * Ryan Gittins and Phillip Sime
  *
- * CS441/541: Project 1 Part 1
+ * CS441: Project 1 Part 1
+ * 2013-10-01
  *
  */
 #include "support.h"
 
 int split_input_into_jobs(char *input_str, int *num_jobs, job_t **loc_jobs)
 {
-    char * str_ptr  = NULL;
+	/* Make an array of job_types in the order which they occur so we can assgn them below */
+	job_type* types = malloc(sizeof(job_type));
+	
+	int i = 0;
+	int jobs = 0;
+    while(input_str[i] != '\0' && input_str[i] != '\n') {
+        if(input_str[i] == ';') {
+			types[jobs] = JOB_FOREGROUND;
+			types = realloc(types, sizeof(types) + sizeof(job_type));
+			jobs++;
+		}
+		else if(input_str[i] == '&') {
+			types[jobs] = JOB_BACKGROUND;
+			types = realloc(types, sizeof(types) + sizeof(job_type));
+			jobs++;
+		}
+		i++;
+    }
+	
+	/* Add an extra foreground job in case the last job has no trailing separator */
+	types = realloc(types, sizeof(types) + sizeof(job_type));
+	types[jobs+1] = JOB_FOREGROUND;
+	
+	/* NOTE: The above section may be better off relegated to its own 'get_job_assignments(char *input_str)' function, discuss later */
+	
+	char * str_ptr  = NULL;
 
     /* Start counting at 0 */
     (*num_jobs) = 0;
-
+	
     /* Split by ';' and '&' */
     for( str_ptr = strtok(input_str, "&;");
          NULL   != str_ptr;
@@ -33,11 +58,8 @@ int split_input_into_jobs(char *input_str, int *num_jobs, job_t **loc_jobs)
         (*loc_jobs)[(*num_jobs)].argc = 0;
         (*loc_jobs)[(*num_jobs)].argv = NULL;
         
-        // Determine if the job should be ran in the background or foreground.
-        // TODO
-        (*loc_jobs)[(*num_jobs)].type = JOB_BACKGROUND;
-        // TODO
-        (*loc_jobs)[(*num_jobs)].type = JOB_FOREGROUND;
+		/* Assign the foreground/background status (as determined above) to the job */
+        (*loc_jobs)[(*num_jobs)].type = types[(*num_jobs)];
 
         /* Increment the number of jobs */
         (*num_jobs)++;

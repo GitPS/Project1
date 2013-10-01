@@ -2,6 +2,7 @@
  * Ryan Gittins and Phillip Sime
  *
  * CS441: Project 1 Part 1
+ * 2013-10-01
  *
  */
 #include "myshell.h"
@@ -50,7 +51,7 @@ int start_interactive_shell(char * shell_name, char * argv[]){
 		i = 0;
 		j = 0;
 		
-		printf("%s: ", shell_name);
+		printf("%s ", shell_name);
 		fgets_rtn = fgets(buffer, LINELEN, stdin);
 		
 		split_input_into_jobs(fgets_rtn, &num_jobs, &loc_jobs);

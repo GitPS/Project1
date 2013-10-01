@@ -1,7 +1,8 @@
-# Josh Hursey
-# Feb. 11, 2013
+
+# Ryan Gittins and Phillip Sime
 #
-# CS441/541: Project 1 Part 1
+# CS441: Project 1 Part 1
+# 2013-10-01
 #
 #####################################################################
 #
