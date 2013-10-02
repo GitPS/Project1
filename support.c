@@ -10,27 +10,54 @@
 int split_input_into_jobs(char *input_str, int *num_jobs, job_t **loc_jobs)
 {
 	/* Make an array of job_types in the order which they occur so we can assgn them below */
-	job_type* types = malloc(sizeof(job_type));
+	//job_type* types = malloc(sizeof(job_type));
+	
+	// TEST START
+	// Default array size.
+	int job_array_size = 1024;
+	// Initialize job_type array.
+	job_type *types = malloc(sizeof(job_type) * job_array_size);
+	
+	int j;
+	// Set each element in the job_type array to JOB_NULL.
+	for(j = 0; j < job_array_size; j++){
+		types[j] = JOB_NULL;
+	}
+	
+	// TEST END
 	
 	int i = 0;
 	int jobs = 0;
     while(input_str[i] != '\0' && input_str[i] != '\n') {
         if(input_str[i] == ';') {
 			types[jobs] = JOB_FOREGROUND;
-			types = realloc(types, sizeof(types) + sizeof(job_type));
+			//types = realloc(types, sizeof(types) + sizeof(job_type));
+			if(job_array_size <= jobs){
+				// Make a new array double in size.
+				// TODO				
+			}
 			jobs++;
 		}
 		else if(input_str[i] == '&') {
 			types[jobs] = JOB_BACKGROUND;
-			types = realloc(types, sizeof(types) + sizeof(job_type));
+			//types = realloc(types, sizeof(types) + sizeof(job_type));
+			if(job_array_size <= jobs){
+				// Make a new array double in size.
+				// TODO				
+			}
 			jobs++;
 		}
 		i++;
     }
 	
 	/* Add an extra foreground job in case the last job has no trailing separator */
-	types = realloc(types, sizeof(types) + sizeof(job_type));
-	types[jobs+1] = JOB_FOREGROUND;
+	//types = realloc(types, sizeof(types) + sizeof(job_type));
+	
+	if(job_array_size <= jobs){
+		// Make a new array double in size.
+		// TODO				
+	}
+	types[jobs] = JOB_FOREGROUND;
 	
 	/* NOTE: The above section may be better off relegated to its own 'get_job_assignments(char *input_str)' function, discuss later */
 	
