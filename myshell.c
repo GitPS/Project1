@@ -86,6 +86,10 @@ int start_interactive_shell(char * shell_name, char * argv[]){
 				} else if(loc_jobs[i].type == JOB_FOREGROUND){
 					printf("Job %d : <%s>", job_number, binary);
 				}
+				else {
+					fprintf(stderr, "Error: Failed to assign job type for Job %d: <%s>! Critical failure on %d!", job_number, binary, __LINE__);
+					exit(-1);
+				}
 			}
 			
 			// Print each argument after the binary.

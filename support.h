@@ -25,7 +25,8 @@
  ******************************/
 enum job_type{
     JOB_BACKGROUND,
-    JOB_FOREGROUND
+    JOB_FOREGROUND,
+	JOB_NULL
 };
 
 typedef enum job_type job_type;
