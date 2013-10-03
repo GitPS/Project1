@@ -220,6 +220,8 @@ int start_batch_shell(char *filename){
 						free(binary);
 						binary = NULL;
 					}					
+					// Print a new line to keep correct formatting.
+					printf("\n");
 					// Exit the loop here.
 					break;
 				}	
