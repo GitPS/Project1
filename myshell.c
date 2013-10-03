@@ -140,6 +140,9 @@ int start_interactive_shell(char * shell_name, char * argv[]){
 
             /* .argc */
             loc_jobs[i].argc = 0;
+            
+            /* .type */
+            loc_jobs[i].type = JOB_NULL;
         }
 
         /* Free the array */
