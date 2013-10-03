@@ -1,0 +1,1000 @@
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
+ls assign1 assign2 assign3
+cd .. ; cd .. & cd .. ; cd .. &
+cd ..
+cd /home/test/
+date
+/bin/pwd
