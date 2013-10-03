@@ -157,10 +157,7 @@ int start_batch_shell(char * shell_name, char * argv[]){
 
 int is_built_in_command(char * binary){
 	if(strncmp("exit", binary, strlen("exit")) == 0 || strncmp("jobs", binary, strlen("jobs")) == 0){
-		// Ensure this isn't an empty string.
-		if(strlen(binary) > 0){
-			return 1;	
-		}
+		return 1;	
 	}
 	return 0;
 }
