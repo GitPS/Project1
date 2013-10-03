@@ -58,7 +58,7 @@ int split_input_into_jobs(char *input_str, int *num_jobs, job_t **loc_jobs)
 	
     /* Split by ';' and '&' */
     for( str_ptr = strtok(input_str, "&;");
-         NULL   != str_ptr;
+         NULL   != str_ptr && *str_ptr != '\n';
          str_ptr = strtok(NULL, "&;") ) {
 
         /*
@@ -81,8 +81,6 @@ int split_input_into_jobs(char *input_str, int *num_jobs, job_t **loc_jobs)
         /* Increment the number of jobs */
         (*num_jobs)++;
     }
-
-    /* Note: May need to add code here to check for forground/background */
 
     return 0;
 }
