@@ -29,6 +29,8 @@ int start_interactive_shell(char * shell_name, char * argv[]){
 	char *fgets_rtn = NULL;
 	int num_jobs = 0;
 	int job_number = 0;
+	int total_jobs = 0;
+	int total_background_jobs = 0;
 	int i, j;
 	job_t *loc_jobs = NULL;
 	
@@ -68,7 +70,7 @@ int start_interactive_shell(char * shell_name, char * argv[]){
 			fflush(NULL);
 			// Display the binary.
 			if(is_built_in_command(binary) == 1){
-				printf("Job %d^: <%s>", job_number, binary);
+				printf("Job %d^: <%s>", job_number + 1, binary);
 				// Check for exit command.
 				if(strncmp("exit", binary, strlen(binary)) == 0){
 					fgets_rtn = NULL;
@@ -82,9 +84,12 @@ int start_interactive_shell(char * shell_name, char * argv[]){
 			}
 			else{
 				if(loc_jobs[i].type == JOB_BACKGROUND){
-					printf("Job %d*: <%s>", job_number, binary);	
+					printf("Job %d*: <%s>", job_number + 1, binary);
+					total_jobs++;
+					total_background_jobs++;
 				} else if(loc_jobs[i].type == JOB_FOREGROUND){
-					printf("Job %d : <%s>", job_number, binary);
+					printf("Job %d : <%s>", job_number + 1, binary);
+					total_jobs++;
 				}
 				else {
 					fprintf(stderr, "Error: Failed to assign job type for Job %d: <%s>! Critical failure on %d!", job_number, binary, __LINE__);
@@ -108,6 +113,8 @@ int start_interactive_shell(char * shell_name, char * argv[]){
 	} while(fgets_rtn != NULL);
 	
 	printf("\n");
+	printf("Total nubmer of jobs: %d\n", total_jobs);
+	printf("Total nubmer of background jobs: %d\n", total_background_jobs);
 	
 	if(buffer != NULL){
 		free(buffer);
