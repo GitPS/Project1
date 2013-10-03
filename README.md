@@ -1,8 +1,10 @@
 #### CS 441 Project 1 ####
 
-Authors: Ryan Gittins and Phillip Sime
+__Authors__
 
-Summary: 
+Ryan Gittins and Phillip Sime
+
+__Summary__
 
 This is a command line interpreter written in C which implements a subset of the functionality provided by the Unix shell.  This shell can run in two different modes, interactive and batch, and every command can be run as either a background job or a foreground job.
 
@@ -14,20 +16,21 @@ Foreground jobs are assigned such status by a semicolon following the command, w
 
 All commands rely on the underlying system's commands, with the exception on `jobs` and `exit`.
 
-Build: 
+__Build__
 
 To build this software, simply navigate to the directory containing the Makefile, myshell.c, myshell.h, support.c and support.h files on a unix-based machine or virtual machine. Type the command `make` into the terminal to trigger the build. This will cause the gcc build commands listed in the Makefile to execute, compiling the source code into an executable file.
 
-Usage: 
+__Usage__
 
 
 
-Test Cases: 
+__Test Cases__
 
 
 
-Examples: 
+__Examples__
 
 
 
-Known bugs and problem areas: 
+__Known Bugs and Problem Areas__
+
