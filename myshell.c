@@ -13,7 +13,7 @@ int main(int argc, char * argv[]) {
 	
 	// Start shell in interactive mode.
 	if(argc < 2){
-		start_interactive_shell(shell_name, argv);		
+		start_interactive_shell(shell_name);		
 	}	
 	
 	// Start shell in batch mode.
@@ -24,7 +24,7 @@ int main(int argc, char * argv[]) {
     return 0;
 }
 
-int start_interactive_shell(char * shell_name, char * argv[]){
+int start_interactive_shell(char * shell_name){
 	char *buffer = NULL;
 	char *fgets_rtn = NULL;
 	int num_jobs = 0;
@@ -162,7 +162,7 @@ int start_interactive_shell(char * shell_name, char * argv[]){
 
 int start_batch_shell(char * shell_name, char * argv[]){
 	// TODO	
-	return 0;		
+	return 0;	
 }
 
 int is_built_in_command(char * binary){

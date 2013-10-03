@@ -52,7 +52,7 @@ int LINELEN = 1024;
  * Begins execution of an interactive shell allowing the user to 
  * enter their commands via a command line.
  */
-int start_interactive_shell(char * shell_name, char * argv[]);
+int start_interactive_shell(char * shell_name);
 
 /*
  * Begins execution of a batch shell allowing the user to 
