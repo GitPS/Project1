@@ -58,7 +58,7 @@ int start_interactive_shell(char * shell_name);
  * Begins execution of a batch shell allowing the user to 
  * include the file name of a file to execute.
  */
-int start_batch_shell(char *filename);
+int start_batch_shell(char *filename, int *total_jobs, int *total_background_jobs);
 
 /*
  * Checks to see if the provided binary is 

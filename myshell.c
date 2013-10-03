@@ -18,7 +18,17 @@ int main(int argc, char * argv[]) {
 	
 	// Start shell in batch mode.
 	else{
-		start_batch_shell(argv[1]);	
+		int i;
+		int total_jobs = 0;
+		int total_background_jobs = 0;
+
+		for( i = 1; i < argc; ++i ) {
+			// Process next file.
+		    start_batch_shell(argv[i], &total_jobs, &total_background_jobs);
+		}
+		
+		printf("Total number of jobs: %d\n", total_jobs);
+		printf("Total number of background jobs: %d\n", total_background_jobs);
 	}
 	
     return 0;
@@ -158,14 +168,12 @@ int start_interactive_shell(char * shell_name){
 	return 0;		
 }
 
-int start_batch_shell(char *filename){
+int start_batch_shell(char *filename, int *total_jobs, int *total_background_jobs){
 	FILE *fd = NULL;
 	char *buffer = NULL;
 	char *fgets_rtn = NULL;
 	int num_jobs = 0;
 	int job_number = 0;
-	int total_jobs = 0;
-	int total_background_jobs = 0;
 	int i, j;
 	job_t *loc_jobs = NULL;
 	
@@ -229,11 +237,11 @@ int start_batch_shell(char *filename){
 			else{
 				if(loc_jobs[i].type == JOB_BACKGROUND){
 					printf("Job %d*: <%s>", job_number + 1, binary);
-					total_jobs++;
-					total_background_jobs++;
+					*total_jobs = *total_jobs + 1;
+					*total_background_jobs = *total_background_jobs + 1;
 				} else if(loc_jobs[i].type == JOB_FOREGROUND){
 					printf("Job %d : <%s>", job_number + 1, binary);
-					total_jobs++;
+					*total_jobs = *total_jobs + 1;
 				}
 				else {
 					fprintf(stderr, "Error: Failed to assign job type for Job %d: <%s>! Critical failure on %d!", job_number, binary, __LINE__);
@@ -255,9 +263,6 @@ int start_batch_shell(char *filename){
 			}
 		}
 	}
-	
-	printf("Total number of jobs: %d\n", total_jobs);
-	printf("Total number of background jobs: %d\n", total_background_jobs);
 	
 	if(buffer != NULL){
 		free(buffer);
