@@ -14,7 +14,7 @@ Batch mode is initiated by a call to `./myshell` followed by one or more filenam
 
 Foreground jobs are assigned such status by a semicolon following the command, while background jobs should be called with a trailing ampersand.  These symbols act as delimiters for commands as well as job type designators.  If no character follows the last command, it will run in the foreground.
 
-All commands rely on the underlying system's commands, with the exception on `jobs` and `exit`.
+All commands rely on the underlying system's commands, with the exception of `jobs` and `exit`.
 
 __Build__
 

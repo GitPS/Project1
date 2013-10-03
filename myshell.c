@@ -256,8 +256,8 @@ int start_batch_shell(char *filename){
 		}
 	}
 	
-	printf("Total nubmer of jobs: %d\n", total_jobs);
-	printf("Total nubmer of background jobs: %d\n", total_background_jobs);
+	printf("Total number of jobs: %d\n", total_jobs);
+	printf("Total number of background jobs: %d\n", total_background_jobs);
 	
 	if(buffer != NULL){
 		free(buffer);
