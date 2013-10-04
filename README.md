@@ -44,6 +44,7 @@ __Examples__
 This example shows the shell while in interactive mode and executing several command.
 
 ````
+shell$ ./myshell
 myshell$ cd ..
 Job 1 : <cd> [..]
 myshell$ mv test.txt /tests/;cd ..&sleep 5 
@@ -61,6 +62,7 @@ Total number of background jobs: 1
 
 This example shows the shell while in batch mode and reading in two test files.
 ````
+./myshell tests/test1.txt tests/test3.txt
 Job 1 : </bin/date>
 Job 2 : </bin/pwd>
 Job 3 : </bin/ls> [assign1] [assign2] [..]
