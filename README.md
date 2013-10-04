@@ -56,7 +56,6 @@ myshell$ exit
 Job 6^: <exit>
 Total number of jobs: 4
 Total number of background jobs: 1
-phil@phil-U46E:~/Documents/cs441/project1$ 
 
 ````
 
