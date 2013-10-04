@@ -3,6 +3,7 @@
 __Authors__
 
 Ryan Gittins and Phillip Sime
+2013-10-03
 
 __Summary__
 
@@ -28,7 +29,15 @@ To use this software in batch mode, use the `./myshell` command again, followed 
 
 __Test Cases__
 
+The test suite includes four textfiles, each of which serves a purpose.  They are as follows:
 
+test1.txt -- This test is the one included on page three of the PDF file.  Its output is identical to that which is to be expected.
+
+test2.txt -- This file is 1000 lines long and contains nearly 1500 jobs.  This demonstrates the program's excellent performance under stress as well as its handling of multiple commands on one line and different job types.
+
+test3.txt -- This test demonstrates some longer test commands with varying numbers of arguments.  These tests are also a demonstration of the shell's handling of some real-world commands a shell might have to parse and run.
+
+test4.txt -- This file contains many blank lines, demonstrating the shell's handling of empty input.
 
 __Examples__
 
@@ -36,3 +45,4 @@ __Examples__
 
 __Known Bugs and Problem Areas__
 
+There are no known bugs at this time.
