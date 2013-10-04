@@ -62,7 +62,7 @@ Total number of background jobs: 1
 
 This example shows the shell while in batch mode and reading in two test files.
 ````
-./myshell tests/test1.txt tests/test3.txt
+shell$ ./myshell tests/test1.txt tests/test3.txt
 Job 1 : </bin/date>
 Job 2 : </bin/pwd>
 Job 3 : </bin/ls> [assign1] [assign2] [..]
