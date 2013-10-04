@@ -22,7 +22,9 @@ To build this software, simply navigate to the directory containing the Makefile
 
 __Usage__
 
+To use this software in interactive mode, simply run the command `./myshell` at the command line.  This will launch the shell, to which you can submit commands.  You can run multiple commands at once, delimited by semicolons or ampersands, as discussed in the summary.  Once you've typed the command, simply press the enter key to execute it.
 
+To use this software in batch mode, use the `./myshell` command again, followed by one or more textfile names, delimited by spaces.  These files should contain commands as you would run them in interactive mode, with one on every line.  An example call would be `./myshell test1.txt test2.txt`.  This mode also supports both foreground and background job types.
 
 __Test Cases__
 
