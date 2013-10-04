@@ -41,8 +41,47 @@ test4.txt -- This file contains many blank lines, demonstrating the shell's hand
 
 __Examples__
 
+This example shows the shell while in interactive mode and executing several command.
 
+````
+myshell$ cd ..
+Job 1 : <cd> [..]
+myshell$ mv test.txt /tests/;cd ..&sleep 5 
+Job 2 : <mv> [test.txt] [/tests/]
+Job 3*: <cd> [..]
+Job 4 : <sleep> [5]
+myshell$ jobs   
+Job 5^: <jobs>
+myshell$ exit
+Job 6^: <exit>
+Total number of jobs: 4
+Total number of background jobs: 1
+phil@phil-U46E:~/Documents/cs441/project1$ 
+
+````
+
+This example shows the shell while in batch mode and reading in two test files.
+````
+Job 1 : </bin/date>
+Job 2 : </bin/pwd>
+Job 3 : </bin/ls> [assign1] [assign2] [..]
+Job 4 : </bin/pwd>
+Job 5 : </bin/ls> [..]
+Job 6*: </bin/sleep> [5]
+Job 7*: </bin/sleep> [3]
+Job 1 : <mv> [/home/user/documents/file.txt] [/home/user/documents/backups/file.txt]
+Job 2 : <sudo> [apt-get] [install] [fail2ban]
+Job 3*: <ping> [-c] [10] [www.google.com]
+Job 4*: <ping> [-c] [10] [www.yahoo.com]
+Job 5*: <ping> [-c] [10] [www.bing.com]
+Job 6 : <cd> [..]
+Job 7 : <cd> [/home/user/documents]
+Job 8 : <cd> [/home/user/documents/backups]
+Job 9 : <youtube-dl> [http://youtu.be/jofNR_WkoCE]
+Total number of jobs: 16
+Total number of background jobs: 5
+
+````
 
 __Known Bugs and Problem Areas__
-
-There are no known bugs at this time.
+* Command prompt is limited to 1024 characters.
