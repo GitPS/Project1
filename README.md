@@ -86,3 +86,4 @@ Total number of background jobs: 5
 
 __Known Bugs and Problem Areas__
 * Command prompt is limited to 1024 characters.
+* If the '&' or ';' is entered with a only whitespace it will cause the program to crash.  Example: '&  &'
