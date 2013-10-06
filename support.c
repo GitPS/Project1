@@ -58,28 +58,30 @@ int split_input_into_jobs(char *input_str, int *num_jobs, job_t **loc_jobs)
 	
     /* Split by ';' and '&' */
     for( str_ptr = strtok(input_str, "&;");
-         NULL   != str_ptr && *str_ptr != '\n' && *str_ptr != ' ';
+         NULL   != str_ptr && *str_ptr != '\n';
          str_ptr = strtok(NULL, "&;") ) {
+		
+		if(!is_whitespace(str_ptr)) {
+			/*
+			 * Make a place for the new job in the local jobs array
+			 */
+			(*loc_jobs) = (job_t *)realloc((*loc_jobs), (sizeof(job_t) * ((*num_jobs)+1)));
+			if( NULL == (*loc_jobs) ) {
+				fprintf(stderr, "Error: Failed to allocate memory! Critical failure on %d!", __LINE__);
+				exit(-1);
+			}
 
-        /*
-         * Make a place for the new job in the local jobs array
-         */
-        (*loc_jobs) = (job_t *)realloc((*loc_jobs), (sizeof(job_t) * ((*num_jobs)+1)));
-        if( NULL == (*loc_jobs) ) {
-            fprintf(stderr, "Error: Failed to allocate memory! Critical failure on %d!", __LINE__);
-            exit(-1);
-        }
+			/* Initialize the job_t structure */
+			(*loc_jobs)[(*num_jobs)].full_command = strdup(str_ptr);
+			(*loc_jobs)[(*num_jobs)].argc = 0;
+			(*loc_jobs)[(*num_jobs)].argv = NULL;
+			
+			/* Assign the foreground/background status (as determined above) to the job */
+			(*loc_jobs)[(*num_jobs)].type = types[(*num_jobs)];
 
-        /* Initialize the job_t structure */
-        (*loc_jobs)[(*num_jobs)].full_command = strdup(str_ptr);
-        (*loc_jobs)[(*num_jobs)].argc = 0;
-        (*loc_jobs)[(*num_jobs)].argv = NULL;
-        
-		/* Assign the foreground/background status (as determined above) to the job */
-        (*loc_jobs)[(*num_jobs)].type = types[(*num_jobs)];
-
-        /* Increment the number of jobs */
-        (*num_jobs)++;
+			/* Increment the number of jobs */
+			(*num_jobs)++;
+		}
     }
 
     return 0;
@@ -119,4 +121,16 @@ int split_job_into_args(job_t *loc_job)
     }
 
     return 0;
+}
+
+int is_whitespace(char *str)
+{
+	int i = 0;
+	while(str[i] != '\0') {
+		if(str[i] != ' ') {
+			return 0;
+		}
+		i++;
+	}
+	return 1;
 }

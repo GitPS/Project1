@@ -67,4 +67,9 @@ int split_input_into_jobs(char *input_str, int *num_jobs, job_t **loc_jobs);
  */
 int split_job_into_args(job_t *loc_job);
 
+/*
+ * Returns 1 if the string is all whitespace, 0 otherwise.
+ */
+int is_whitespace(char *str);
+
 #endif /* SUPPORT_H */
