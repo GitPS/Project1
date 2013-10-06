@@ -1,7 +1,7 @@
 
 # Ryan Gittins and Phillip Sime
 #
-# CS441: Project 1 Part 1
+# CS441: Project 1 Part 2
 # 2013-10-01
 #
 #####################################################################
