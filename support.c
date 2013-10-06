@@ -58,7 +58,7 @@ int split_input_into_jobs(char *input_str, int *num_jobs, job_t **loc_jobs)
 	
     /* Split by ';' and '&' */
     for( str_ptr = strtok(input_str, "&;");
-         NULL   != str_ptr && *str_ptr != '\n';
+         NULL   != str_ptr && *str_ptr != '\n' && *str_ptr != ' ';
          str_ptr = strtok(NULL, "&;") ) {
 
         /*
