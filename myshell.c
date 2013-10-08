@@ -64,6 +64,11 @@ int start_interactive_shell(char * shell_name){
 		printf("%s ", shell_name);
 		fgets_rtn = fgets(buffer, LINELEN, stdin);
 		
+		// If Ctrl-D is entered, program will interpret this as an exit command.
+		if(fgets_rtn == NULL){
+			fgets_rtn = strndup("exit", (sizeof(char) * 4));
+		}
+		
 		split_input_into_jobs(fgets_rtn, &num_jobs, &loc_jobs);
 		
 		/*
