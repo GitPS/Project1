@@ -101,9 +101,7 @@ int start_interactive_shell(char * shell_name){
 					total_jobs++;
 					total_background_jobs++;
 				} else if(loc_jobs[i].type == JOB_FOREGROUND){
-					// TEST START
 					execute_foreground_job(binary, loc_jobs[i].argc, loc_jobs[i].argv);
-					// TEST END
 					total_jobs++;
 				}
 				else {
