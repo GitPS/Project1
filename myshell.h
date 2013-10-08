@@ -69,5 +69,13 @@ int start_batch_shell(char *filename, int *total_jobs, int *total_background_job
  */
 int is_built_in_command(char * binary);
 
+/*
+ * Executes a foreground job.
+ * Returns:
+ *   -1 on error
+ *   0 if successful 
+ */
+int execute_foreground_job(char * binary, int argc, char ** argv); 	
+
 
 #endif /* MYSHELL_H */

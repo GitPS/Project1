@@ -101,7 +101,9 @@ int start_interactive_shell(char * shell_name){
 					total_jobs++;
 					total_background_jobs++;
 				} else if(loc_jobs[i].type == JOB_FOREGROUND){
-					printf("Job %d : <%s>", job_number + 1, binary);
+					// TEST START
+					execute_foreground_job(binary, loc_jobs[i].argc, loc_jobs[i].argv);
+					// TEST END
 					total_jobs++;
 				}
 				else {
@@ -110,12 +112,9 @@ int start_interactive_shell(char * shell_name){
 				}
 			}
 			
-			// Print each argument after the binary.
-			for( j = 1; j < loc_jobs[i].argc; ++j ) {
-				printf(" [%s]", loc_jobs[i].argv[j]);
-			}
 			// Increase job count each time we print a job.
 			job_number++;
+			// Remove this new line when the background jobs are implemented. 
 			printf("\n");
 			fflush(NULL);
 			if(binary != NULL){
@@ -316,6 +315,55 @@ int is_built_in_command(char * binary){
 	if(strncmp("exit", binary, strlen("exit")) == 0 || strncmp("jobs", binary, strlen("jobs")) == 0){
 		return 1;	
 	}
+	return 0;
+}
+
+int execute_foreground_job(char * binary, int argc, char ** argv){
+	char **args = NULL;
+	pid_t c_pid = 0;
+	int status = 0;
+	
+	args = (char **) malloc(sizeof(char *) * argc);
+	
+	// Add the binary to the array.
+	args[0] = strdup(binary);
+	
+	int i;
+	// Add the agruments to the array.
+	for(i = 1; i < (argc - 1); i++){
+		args[i] = strdup(argv[i]);
+	}
+	// Null in last position.
+	args[i] = NULL;
+	
+	// Fork a process
+    c_pid = fork();
+
+    // If there was an error
+    if( c_pid < 0 ) {
+        fprintf(stderr, "Error: fork failed!\n");
+        return -1;
+    }
+    // Child process
+    else if( 0 == c_pid ) {
+        execvp(binary, args);
+        fprintf(stderr, "Error: Exec failed!\n");
+        exit(-1);
+    }
+    // Parent process
+    else {
+        // Wait for child
+        waitpid(c_pid, &status, 0);
+    }
+
+    if( NULL != args ) {
+        // Free each string created by strdup() above
+        for( i = 0; NULL != args[i]; ++i ) {
+            free(args[i]);
+        }
+        free(args);
+    }
+	
 	return 0;
 }
 
