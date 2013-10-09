@@ -67,7 +67,7 @@ int start_interactive_shell(char * shell_name);
 int start_batch_shell(char *filename, int *total_jobs, int *total_background_jobs);
 
 /*
- * Executes a foreground job.
+ * Checks whether the provided string is a built-in command.
  *   binary : String containing the command to execute without parameters.
  * Return 1 if built in job, 0 otherwise. 
  */
