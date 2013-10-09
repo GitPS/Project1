@@ -251,10 +251,6 @@ int start_batch_shell(char *filename, int *total_jobs, int *total_background_job
 				}
 			}
 			
-			// Print each argument after the binary.
-			for( j = 1; j < loc_jobs[i].argc; ++j ) {
-				printf(" [%s]", loc_jobs[i].argv[j]);
-			}
 			// Increase job count each time we print a job.
 			job_number++;
 			printf("\n");
