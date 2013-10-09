@@ -51,29 +51,34 @@ int LINELEN = 1024;
 /*
  * Begins execution of an interactive shell allowing the user to 
  * enter their commands via a command line.
+ *   shell_name : String containing the name of the shell.
+ * Return 0 on success, ow error
  */
 int start_interactive_shell(char * shell_name);
 
 /*
- * Begins execution of a batch shell allowing the user to 
- * include the file name of a file to execute.
+ * Checks to see if the provided binary is 
+ * a built in command or not.
+ *   filename : Name of the file that contains commands to execute.
+ *   total_jobs : Integer to hold the number of jobs.
+ *   total_background_jobs : Integer to hold the number of background jobs.
+ *  Return 0 on success, ow error
  */
 int start_batch_shell(char *filename, int *total_jobs, int *total_background_jobs);
 
 /*
- * Checks to see if the provided binary is 
- * a built in command or not.
- * Returns:
- *   0 if not built in 
- *   1 if built in 
+ * Executes a foreground job.
+ *   binary : String containing the command to execute without parameters.
+ * Return 1 if built in job, 0 otherwise. 
  */
 int is_built_in_command(char * binary);
 
 /*
  * Executes a foreground job.
- * Returns:
- *   -1 on error
- *   0 if successful 
+ *   binary : String containing the command to execute without parameters.
+ *   argc : Integer containing the total number of arguments for a specific job.
+ *   argv : String array containing the arguments of the job to execute. 
+ * Return 0 on success, ow error 
  */
 int execute_foreground_job(char * binary, int argc, char ** argv); 	
 
