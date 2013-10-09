@@ -239,11 +239,11 @@ int start_batch_shell(char *filename, int *total_jobs, int *total_background_job
 			else{
 				if(loc_jobs[i].type == JOB_BACKGROUND){
 					printf("Job %d*: <%s>", job_number + 1, binary);
-					*total_jobs = *total_jobs + 1;
-					*total_background_jobs = *total_background_jobs + 1;
+					(*total_jobs)++;
+					(*total_background_jobs)++;
 				} else if(loc_jobs[i].type == JOB_FOREGROUND){
-					printf("Job %d : <%s>", job_number + 1, binary);
-					*total_jobs = *total_jobs + 1;
+					execute_foreground_job(binary, loc_jobs[i].argc, loc_jobs[i].argv);
+					(*total_jobs)++;
 				}
 				else {
 					fprintf(stderr, "Error: Failed to assign job type for Job %d: <%s>! Critical failure on %d!", job_number, binary, __LINE__);
