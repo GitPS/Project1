@@ -321,19 +321,19 @@ int execute_foreground_job(char * binary, int argc, char ** argv){
 	pid_t c_pid = 0;
 	int status = 0;
 	
-	args = (char **) malloc(sizeof(char *) * argc);
+	args = (char **) malloc(sizeof(char *) * (argc+1));
 	
 	// Add the binary to the array.
 	args[0] = strdup(binary);
 	
 	int i;
 	// Add the agruments to the array.
-	for(i = 1; i < (argc - 1); i++){
+	for(i = 1; i < (argc); i++){
 		args[i] = strdup(argv[i]);
 	}
 	// Null in last position.
 	args[i] = NULL;
-	
+
 	// Fork a process
     c_pid = fork();
 
