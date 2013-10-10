@@ -464,7 +464,7 @@ pid_t execute_background_job(char * binary, int argc, char ** argv){
     }
     // Parent process
     else {
-        // Return control to the terminal while job is executing the background.
+        // Return control to the terminal while job is executing in the background.
         return c_pid;        
     }
 

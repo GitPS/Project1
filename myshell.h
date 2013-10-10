@@ -82,6 +82,13 @@ int is_built_in_command(char * binary);
  */
 int execute_foreground_job(char * binary, int argc, char ** argv);
 
+/*
+ * Executes a background job.
+ *   binary : String containing the command to execute without parameters.
+ *   argc : Integer containing the total number of arguments for a specific job.
+ *   argv : String array containing the arguments of the job to execute. 
+ * Return pid_t on successful creation of a new process 
+ */
 pid_t execute_background_job(char * binary, int argc, char ** argv);
 
 
