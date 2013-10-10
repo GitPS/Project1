@@ -1,1000 +1,1000 @@
-cd ..
-cd /home/test/
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
-ls assign1 assign2 assign3
-cd .. ; cd .. & cd .. ; cd .. &
-cd ..
-cd /home/test/
+ls tests .. .
+sleep 2 & sleep 3 & sleep 4 & sleep 5 &
+ls .
+cat tests/file1.txt
 date
 /bin/pwd
