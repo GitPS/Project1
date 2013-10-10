@@ -80,7 +80,9 @@ int is_built_in_command(char * binary);
  *   argv : String array containing the arguments of the job to execute. 
  * Return 0 on success, ow error 
  */
-int execute_foreground_job(char * binary, int argc, char ** argv); 	
+int execute_foreground_job(char * binary, int argc, char ** argv);
+
+pid_t execute_background_job(char * binary, int argc, char ** argv);
 
 
 #endif /* MYSHELL_H */

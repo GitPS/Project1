@@ -37,17 +37,27 @@ int main(int argc, char * argv[]) {
 int start_interactive_shell(char * shell_name){
 	char *buffer = NULL;
 	char *fgets_rtn = NULL;
+
 	int num_jobs = 0;
 	int job_number = 0;
 	int total_jobs = 0;
 	int total_background_jobs = 0;
 	int i, j;
+	int jobs_b_size = 0;
+	
 	job_t *loc_jobs = NULL;
+	background_job * jobs_b = NULL;
 	
 	loc_jobs = (job_t*)malloc(sizeof(job_t) * 1);
 	if( NULL == loc_jobs ) {
         fprintf(stderr, "Error: Failed to allocate memory! Critical failure on %d!", __LINE__);
         exit(-1);
+    }
+    
+    jobs_b = (background_job*)malloc(sizeof(background_job) * 1);
+    if( NULL == jobs_b ) {
+    	fprintf(stderr, "Error: Failed to allocate memory! Critical failure on %d!", __LINE__);
+    	exit(-1);
     }
 	
 	buffer = (char*) malloc( sizeof(char) * LINELEN);
@@ -76,6 +86,9 @@ int start_interactive_shell(char * shell_name){
 		 */
 		for( i = 0; i < num_jobs; ++i ) {
 			char *binary;
+			char *duplicate_command = NULL;
+			
+			duplicate_command = strdup(loc_jobs[i].full_command);
 
 			split_job_into_args( &(loc_jobs[i]) );
 			binary = strdup(loc_jobs[i].argv[0]);
@@ -83,9 +96,9 @@ int start_interactive_shell(char * shell_name){
 			fflush(NULL);
 			// Display the binary.
 			if(is_built_in_command(binary) == 1){
-				printf("Job %d^: <%s>", job_number + 1, binary);
+				// printf("Job %d^: <%s>", job_number + 1, binary);
 				// Check for exit command.
-				if(strncmp("exit", binary, strlen(binary)) == 0){
+				if(strncmp("exit", binary, strlen("exit")) == 0){
 					fgets_rtn = NULL;
 					if(binary != NULL){
 						free(binary);
@@ -93,14 +106,50 @@ int start_interactive_shell(char * shell_name){
 					}					
 					// Exit the loop here.
 					break;
+				}
+				else if(strncmp("jobs", binary, strlen("jobs")) == 0){
+					if (jobs_b_size > 0){
+						// Print jobs.
+						int k;
+						pid_t rtn_pid;
+						int status = 0;
+						for(k = 0; k < jobs_b_size; k++){
+							// Job should not be displayed.
+							if(jobs_b[k].display == 0){
+								continue;
+							}
+							rtn_pid = waitpid(jobs_b[k].c_pid, &status, WNOHANG);
+							// Process is not finished.
+							if(rtn_pid == 0){
+								printf("[%d]  Running  %s\n", jobs_b[k].job_number, jobs_b[k].full_command);
+							}
+							// Process has completed.
+							else{
+								printf("[%d]  Done     %s\n", jobs_b[k].job_number, jobs_b[k].full_command);
+								// Don't display this job anymore.
+								jobs_b[k].display = 0;
+							}
+						}
+					}
+					// Otherwise we just return a new terminal prompt.
 				}	
 			}
 			else{
 				if(loc_jobs[i].type == JOB_BACKGROUND){
-					printf("Job %d*: <%s>", job_number + 1, binary);
+					// Begin execution of the job and add the job to the background job array.
+					jobs_b[jobs_b_size].c_pid = execute_background_job(binary, loc_jobs[i].argc, loc_jobs[i].argv);
+					jobs_b[jobs_b_size].job_number = total_background_jobs + 1;
+					jobs_b[jobs_b_size].display = 1;
+					jobs_b[jobs_b_size].full_command = duplicate_command;
+			
+					jobs_b_size++;	
 					total_jobs++;
 					total_background_jobs++;
-				} else if(loc_jobs[i].type == JOB_FOREGROUND){
+					
+					// Expand the jobs_b array each time we add a new background job.
+					jobs_b = realloc(jobs_b, sizeof(background_job) * (jobs_b_size + 1));
+				} 
+				else if(loc_jobs[i].type == JOB_FOREGROUND){
 					execute_foreground_job(binary, loc_jobs[i].argc, loc_jobs[i].argv);
 					total_jobs++;
 				}
@@ -112,8 +161,6 @@ int start_interactive_shell(char * shell_name){
 			
 			// Increase job count each time we print a job.
 			job_number++;
-			// Remove this new line when the background jobs are implemented. 
-			printf("\n");
 			fflush(NULL);
 			if(binary != NULL){
 				free(binary);
@@ -165,6 +212,26 @@ int start_interactive_shell(char * shell_name){
         /* Free the array */
         free(loc_jobs);
         loc_jobs = NULL;
+    }
+    
+        if( NULL != jobs_b ){
+    	for (i = 0; i < jobs_b_size; i++){
+    		/* .full_command */
+    		if(NULL != jobs_b[i].full_command){
+    			free(jobs_b[i].full_command);
+    			jobs_b[i].full_command = NULL;
+    		}
+    		
+    		/* .job_number */
+    		jobs_b[i].job_number = 0;
+    		
+    		/* .display */
+    		jobs_b[i].display = 0;
+    	}
+    	
+    	/* Free the array */
+    	free(jobs_b);
+    	jobs_b = NULL;    
     }
 	
 	return 0;		
@@ -238,7 +305,7 @@ int start_batch_shell(char *filename, int *total_jobs, int *total_background_job
 			}
 			else{
 				if(loc_jobs[i].type == JOB_BACKGROUND){
-					printf("Job %d*: <%s>", job_number + 1, binary);
+					// TODO
 					(*total_jobs)++;
 					(*total_background_jobs)++;
 				} else if(loc_jobs[i].type == JOB_FOREGROUND){
@@ -302,6 +369,7 @@ int start_batch_shell(char *filename, int *total_jobs, int *total_background_job
         free(loc_jobs);
         loc_jobs = NULL;
     }
+    
 	return 0;	
 }
 
@@ -359,6 +427,56 @@ int execute_foreground_job(char * binary, int argc, char ** argv){
     }
 	
 	return 0;
+}
+
+pid_t execute_background_job(char * binary, int argc, char ** argv){
+	char **args = NULL;
+	pid_t c_pid = 0;
+	//int status = 0;
+	
+	args = (char **) malloc(sizeof(char *) * (argc+1));
+	
+	// Add the binary to the array.
+	args[0] = strdup(binary);
+	
+	int i;
+	// Add the agruments to the array.
+	for(i = 1; i < (argc); i++){
+		args[i] = strdup(argv[i]);
+	}
+	// Null in last position.
+	args[i] = NULL;
+
+	// Fork a process
+    c_pid = fork();
+
+    // If there was an error
+    if( c_pid < 0 ) {
+        fprintf(stderr, "Error: fork failed!\n");
+        return -1;
+    }
+    // Child process
+    else if( 0 == c_pid ) {
+    	// Does not return unless there is an error.
+        execvp(binary, args);
+        fprintf(stderr, "Error: Exec failed!\n");
+        exit(-1);
+    }
+    // Parent process
+    else {
+        // Return control to the terminal while job is executing the background.
+        return c_pid;        
+    }
+
+    if( NULL != args ) {
+        // Free each string created by strdup() above
+        for( i = 0; NULL != args[i]; ++i ) {
+            free(args[i]);
+        }
+        free(args);
+    }
+	
+	return 0;		
 }
 
 

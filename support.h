@@ -39,6 +39,14 @@ struct job_t {
 };
 typedef struct job_t job_t;
 
+struct background_job {
+    pid_t c_pid;
+    char * full_command;
+    int job_number;
+    int display;
+};
+typedef struct background_job background_job;
+
 /******************************
  * Global Variables
  ******************************/
