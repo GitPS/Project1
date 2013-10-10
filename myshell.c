@@ -336,7 +336,6 @@ int start_batch_shell(char *filename, int *total_jobs, int *total_background_job
 							}
 						}
 					}
-					// Otherwise we just return a new terminal prompt.
 				}	
 			}
 			else{
