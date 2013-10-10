@@ -88,7 +88,8 @@ int start_interactive_shell(char * shell_name){
 			char *binary;
 			char *duplicate_command = NULL;
 			
-			duplicate_command = strdup(loc_jobs[i].full_command);
+			// Trim a copy of the command so we can echo it out nicely later.
+			duplicate_command = strdup(trim(loc_jobs[i].full_command));
 
 			split_job_into_args( &(loc_jobs[i]) );
 			binary = strdup(loc_jobs[i].argv[0]);
@@ -120,11 +121,11 @@ int start_interactive_shell(char * shell_name){
 							rtn_pid = waitpid(jobs_b[k].c_pid, &status, WNOHANG);
 							// Process is not finished.
 							if(rtn_pid == 0){
-								printf("[%d]  Running  %s\n", jobs_b[k].job_number, jobs_b[k].full_command);
+								printf("[%d]  Running  %s &\n", jobs_b[k].job_number, jobs_b[k].full_command);
 							}
 							// Process has completed.
 							else{
-								printf("[%d]  Done     %s\n", jobs_b[k].job_number, jobs_b[k].full_command);
+								printf("[%d]  Done     %s &\n", jobs_b[k].job_number, jobs_b[k].full_command);
 								// Don't display this job anymore.
 								jobs_b[k].display = 0;
 							}
@@ -295,6 +296,7 @@ int start_batch_shell(char *filename, int *total_jobs, int *total_background_job
 			char *duplicate_command = NULL;
 			
 			duplicate_command = strdup(loc_jobs[i].full_command);
+			trim(duplicate_command);
 
 			split_job_into_args( &(loc_jobs[i]) );
 			binary = strdup(loc_jobs[i].argv[0]);

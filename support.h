@@ -80,4 +80,9 @@ int split_job_into_args(job_t *loc_job);
  */
 int is_whitespace(char *str);
 
+/* 
+ * TODO
+ */
+char *trim(char *str);
+
 #endif /* SUPPORT_H */

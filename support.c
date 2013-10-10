@@ -134,3 +134,28 @@ int is_whitespace(char *str)
 	}
 	return 1;
 }
+
+char *trim(char *str)
+{
+	char *end;
+
+	if(is_whitespace(str)){
+		return str;
+	}
+
+	// Leading spaces
+	while((*str) == ' '){
+		str++;
+	}
+
+	// Trailing spaces
+	end = str + strlen(str) - 1;
+	while((*end) == ' '){
+		end--;
+	}
+
+	// Replace last space with null to terminate
+	*(end + 1) = 0;
+
+	return str;
+}
