@@ -96,7 +96,6 @@ int start_interactive_shell(char * shell_name){
 			fflush(NULL);
 			// Display the binary.
 			if(is_built_in_command(binary) == 1){
-				// printf("Job %d^: <%s>", job_number + 1, binary);
 				// Check for exit command.
 				if(strncmp("exit", binary, strlen("exit")) == 0){
 					fgets_rtn = NULL;
@@ -138,7 +137,7 @@ int start_interactive_shell(char * shell_name){
 				if(loc_jobs[i].type == JOB_BACKGROUND){
 					// Begin execution of the job and add the job to the background job array.
 					jobs_b[jobs_b_size].c_pid = execute_background_job(binary, loc_jobs[i].argc, loc_jobs[i].argv);
-					jobs_b[jobs_b_size].job_number = total_background_jobs + 1;
+					jobs_b[jobs_b_size].job_number = total_jobs + 1;
 					jobs_b[jobs_b_size].display = 1;
 					jobs_b[jobs_b_size].full_command = duplicate_command;
 			
@@ -214,37 +213,42 @@ int start_interactive_shell(char * shell_name){
         loc_jobs = NULL;
     }
     
-        if( NULL != jobs_b ){
-    	for (i = 0; i < jobs_b_size; i++){
-    		/* .full_command */
-    		if(NULL != jobs_b[i].full_command){
-    			free(jobs_b[i].full_command);
-    			jobs_b[i].full_command = NULL;
-    		}
-    		
-    		/* .job_number */
-    		jobs_b[i].job_number = 0;
-    		
-    		/* .display */
-    		jobs_b[i].display = 0;
-    	}
-    	
-    	/* Free the array */
-    	free(jobs_b);
-    	jobs_b = NULL;    
-    }
+    if( NULL != jobs_b ){
+		for (i = 0; i < jobs_b_size; i++){
+			/* .full_command */
+			if(NULL != jobs_b[i].full_command){
+				free(jobs_b[i].full_command);
+				jobs_b[i].full_command = NULL;
+			}
+			
+			/* .job_number */
+			jobs_b[i].job_number = 0;
+			
+			/* .display */
+			jobs_b[i].display = 0;
+		}
+		
+		/* Free the array */
+		free(jobs_b);
+		jobs_b = NULL;    
+	}
 	
 	return 0;		
 }
 
 int start_batch_shell(char *filename, int *total_jobs, int *total_background_jobs){
 	FILE *fd = NULL;
+	
 	char *buffer = NULL;
 	char *fgets_rtn = NULL;
+	
 	int num_jobs = 0;
 	int job_number = 0;
 	int i, j;
+	int jobs_b_size = 0;
+	
 	job_t *loc_jobs = NULL;
+	background_job * jobs_b = NULL;
 	
 	// Open file
 	fd = fopen(filename, "r");
@@ -257,6 +261,12 @@ int start_batch_shell(char *filename, int *total_jobs, int *total_background_job
 	if( NULL == loc_jobs ) {
         fprintf(stderr, "Error: Failed to allocate memory! Critical failure on %d!", __LINE__);
         exit(-1);
+    }
+    
+    jobs_b = (background_job*)malloc(sizeof(background_job) * 1);
+    if( NULL == jobs_b ) {
+    	fprintf(stderr, "Error: Failed to allocate memory! Critical failure on %d!", __LINE__);
+    	exit(-1);
     }
 	
 	buffer = (char*) malloc( sizeof(char) * LINELEN);
@@ -282,6 +292,9 @@ int start_batch_shell(char *filename, int *total_jobs, int *total_background_job
 		 */
 		for( i = 0; i < num_jobs; ++i ) {
 			char *binary;
+			char *duplicate_command = NULL;
+			
+			duplicate_command = strdup(loc_jobs[i].full_command);
 
 			split_job_into_args( &(loc_jobs[i]) );
 			binary = strdup(loc_jobs[i].argv[0]);
@@ -289,25 +302,57 @@ int start_batch_shell(char *filename, int *total_jobs, int *total_background_job
 			fflush(NULL);
 			// Display the binary.
 			if(is_built_in_command(binary) == 1){
-				printf("Job %d^: <%s>", job_number + 1, binary);
 				// Check for exit command.
-				if(strncmp("exit", binary, strlen(binary)) == 0){
+				if(strncmp("exit", binary, strlen("exit")) == 0){
 					fgets_rtn = NULL;
 					if(binary != NULL){
 						free(binary);
 						binary = NULL;
 					}					
-					// Print a new line to keep correct formatting.
-					printf("\n");
 					// Exit the loop here.
 					break;
+				}
+				else if(strncmp("jobs", binary, strlen("jobs")) == 0){
+					if (jobs_b_size > 0){
+						// Print jobs.
+						int k;
+						pid_t rtn_pid;
+						int status = 0;
+						for(k = 0; k < jobs_b_size; k++){
+							// Job should not be displayed.
+							if(jobs_b[k].display == 0){
+								continue;
+							}
+							rtn_pid = waitpid(jobs_b[k].c_pid, &status, WNOHANG);
+							// Process is not finished.
+							if(rtn_pid == 0){
+								printf("[%d]  Running  %s\n", jobs_b[k].job_number, jobs_b[k].full_command);
+							}
+							// Process has completed.
+							else{
+								printf("[%d]  Done     %s\n", jobs_b[k].job_number, jobs_b[k].full_command);
+								// Don't display this job anymore.
+								jobs_b[k].display = 0;
+							}
+						}
+					}
+					// Otherwise we just return a new terminal prompt.
 				}	
 			}
 			else{
 				if(loc_jobs[i].type == JOB_BACKGROUND){
-					// TODO
+					// Begin execution of the job and add the job to the background job array.
+					jobs_b[jobs_b_size].c_pid = execute_background_job(binary, loc_jobs[i].argc, loc_jobs[i].argv);
+					jobs_b[jobs_b_size].job_number = *total_jobs + 1;
+					jobs_b[jobs_b_size].display = 1;
+					jobs_b[jobs_b_size].full_command = duplicate_command;
+			
+					jobs_b_size++;
 					(*total_jobs)++;
 					(*total_background_jobs)++;
+					
+					// Expand the jobs_b array each time we add a new background job.
+					jobs_b = realloc(jobs_b, sizeof(background_job) * (jobs_b_size + 1));
 				} else if(loc_jobs[i].type == JOB_FOREGROUND){
 					execute_foreground_job(binary, loc_jobs[i].argc, loc_jobs[i].argv);
 					(*total_jobs)++;
@@ -320,7 +365,6 @@ int start_batch_shell(char *filename, int *total_jobs, int *total_background_job
 			
 			// Increase job count each time we print a job.
 			job_number++;
-			printf("\n");
 			fflush(NULL);
 			if(binary != NULL){
 				free(binary);
@@ -369,6 +413,26 @@ int start_batch_shell(char *filename, int *total_jobs, int *total_background_job
         free(loc_jobs);
         loc_jobs = NULL;
     }
+    
+    if( NULL != jobs_b ){
+		for (i = 0; i < jobs_b_size; i++){
+			/* .full_command */
+			if(NULL != jobs_b[i].full_command){
+				free(jobs_b[i].full_command);
+				jobs_b[i].full_command = NULL;
+			}
+			
+			/* .job_number */
+			jobs_b[i].job_number = 0;
+			
+			/* .display */
+			jobs_b[i].display = 0;
+		}
+		
+		/* Free the array */
+		free(jobs_b);
+		jobs_b = NULL;    
+	}
     
 	return 0;	
 }
