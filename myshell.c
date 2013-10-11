@@ -148,6 +148,10 @@ int start_interactive_shell(char * shell_name){
 					
 					// Expand the jobs_b array each time we add a new background job.
 					jobs_b = realloc(jobs_b, sizeof(background_job) * (jobs_b_size + 1));
+					if(NULL == jobs_b){
+						fprintf(stderr, "Error: Cannot allocate memory\n");
+						exit(-1);
+					}
 				} 
 				else if(loc_jobs[i].type == JOB_FOREGROUND){
 					execute_foreground_job(binary, loc_jobs[i].argc, loc_jobs[i].argv);
@@ -354,6 +358,10 @@ int start_batch_shell(char *filename, int *total_jobs, int *total_background_job
 					
 					// Expand the jobs_b array each time we add a new background job.
 					jobs_b = realloc(jobs_b, sizeof(background_job) * (jobs_b_size + 1));
+					if(NULL == jobs_b){
+						fprintf(stderr, "Error: Cannot allocate memory\n");
+						exit(-1);
+					}
 				} else if(loc_jobs[i].type == JOB_FOREGROUND){
 					execute_foreground_job(binary, loc_jobs[i].argc, loc_jobs[i].argv);
 					(*total_jobs)++;
