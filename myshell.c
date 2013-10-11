@@ -211,8 +211,14 @@ int start_interactive_shell(char * shell_name){
 				}
 				sleep(1);
 				if(still_running != 0){
-					printf("Waiting on %d more jobs...\n", still_running);
-					fflush(NULL);	
+					if(still_running == 1){
+						printf("Waiting on %d more job...\n", still_running);
+						fflush(NULL);						
+					}
+					else{
+						printf("Waiting on %d more jobs...\n", still_running);
+						fflush(NULL);	
+					}
 				}
 			}
 			printf("All background jobs have finished!\n");	
@@ -466,8 +472,14 @@ int start_batch_shell(char *filename, int *total_jobs, int *total_background_job
 				}
 				sleep(1);
 				if(still_running != 0){
-					printf("Waiting on %d more jobs...\n", still_running);
-					fflush(NULL);	
+					if(still_running == 1){
+						printf("Waiting on %d more job...\n", still_running);
+						fflush(NULL);						
+					}
+					else{
+						printf("Waiting on %d more jobs...\n", still_running);
+						fflush(NULL);	
+					}
 				}
 			}
 			printf("All background jobs have finished!\n");	
