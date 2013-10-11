@@ -168,6 +168,7 @@ int start_interactive_shell(char * shell_name){
 			fflush(NULL);
 			if(binary != NULL){
 				free(binary);
+				binary = NULL;
 			}
 			
 			/* Cleanup */
