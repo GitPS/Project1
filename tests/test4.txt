@@ -8,7 +8,7 @@
 
 
 
-/bin/ls assign1 assign2 ..
+/bin/ls tests .. .
 
 
 
