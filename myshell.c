@@ -105,7 +105,7 @@ int start_interactive_shell(char * shell_name){
 						binary = NULL;
 					}					
 					// Exit the loop here.
-					//break;
+					break;
 				}
 				else if(strncmp("jobs", binary, strlen("jobs")) == 0){
 					if (jobs_b_size > 0){
