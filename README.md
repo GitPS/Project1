@@ -46,44 +46,71 @@ This example shows the shell while in interactive mode and executing several com
 
 ````
 shell$ ./myshell
-myshell$ cd ..
-Job 1 : <cd> [..]
-myshell$ mv test.txt /tests/;cd ..&sleep 5 
-Job 2 : <mv> [test.txt] [/tests/]
-Job 3*: <cd> [..]
-Job 4 : <sleep> [5]
-myshell$ jobs   
-Job 5^: <jobs>
+myshell$ ls tests .. .
+.:
+Makefile   myshell.exe  README.md  support.h  tests
+myshell.c  myshell.h    support.c  support.o
+
+..:
+lab1         lab2         lab3         lab4         project1
+lab1.tar.gz  lab2.tar.gz  lab3.tar.gz  lab4.tar.gz
+
+tests:
+test1.txt  test2.txt  test3.txt  test4.txt  test5.txt
+myshell$ pwd ; date ;
+/home/Ryan/cs441/project1
+Thu, Oct 10, 2013  9:54:35 PM
+myshell$ sleep 1 & sleep 3 &
+myshell$ jobs
+[4]  Done     sleep 1 &
+[5]  Running  sleep 3 &
+myshell$ jobs
+[5]  Done     sleep 3 &
+myshell$ jobs
+myshell$ cat tests/test1.txt
+/bin/date
+/bin/pwd
+/bin/ls assign1 assign2 ..
+/bin/pwd ; /bin/ls ..
+/bin/sleep 5 & /bin/sleep 3 &
 myshell$ exit
-Job 6^: <exit>
-Total number of jobs: 4
-Total number of background jobs: 1
+Total number of jobs: 6
+Total number of background jobs: 2
 
 ````
 
 This example shows the shell while in batch mode and reading in two test files.
 ````
-shell$ ./myshell tests/test1.txt tests/test3.txt
-Job 1 : </bin/date>
-Job 2 : </bin/pwd>
-Job 3 : </bin/ls> [assign1] [assign2] [..]
-Job 4 : </bin/pwd>
-Job 5 : </bin/ls> [..]
-Job 6*: </bin/sleep> [5]
-Job 7*: </bin/sleep> [3]
-Job 1 : <mv> [/home/user/documents/file.txt] [/home/user/documents/backups/file.txt]
-Job 2 : <sudo> [apt-get] [install] [fail2ban]
-Job 3*: <ping> [-c] [10] [www.google.com]
-Job 4*: <ping> [-c] [10] [www.yahoo.com]
-Job 5*: <ping> [-c] [10] [www.bing.com]
-Job 6 : <cd> [..]
-Job 7 : <cd> [/home/user/documents]
-Job 8 : <cd> [/home/user/documents/backups]
-Job 9 : <youtube-dl> [http://youtu.be/jofNR_WkoCE]
-Total number of jobs: 16
-Total number of background jobs: 5
+shell$ ./myshell tests/test4.txt tests/test5.txt
+Thu, Oct 10, 2013  9:51:26 PM
+/home/Ryan/cs441/project1
+.:
+Makefile   myshell.exe  README.md  support.h  tests
+myshell.c  myshell.h    support.c  support.o
+
+..:
+lab1         lab2         lab3         lab4         project1
+lab1.tar.gz  lab2.tar.gz  lab3.tar.gz  lab4.tar.gz
+
+tests:
+test1.txt  test2.txt  test3.txt  test4.txt  test5.txt
+/home/Ryan/cs441/project1
+lab1         lab2         lab3         lab4         project1
+lab1.tar.gz  lab2.tar.gz  lab3.tar.gz  lab4.tar.gz
+Thu, Oct 10, 2013  9:51:26 PM
+/home/Ryan/cs441/project1
+lab1         lab2         lab3         lab4         project1
+lab1.tar.gz  lab2.tar.gz  lab3.tar.gz  lab4.tar.gz
+/home/Ryan/cs441/project1
+lab1         lab2         lab3         lab4         project1
+lab1.tar.gz  lab2.tar.gz  lab3.tar.gz  lab4.tar.gz
+[13]  Running  /bin/sleep 5
+[14]  Running   /bin/sleep 3
+Total number of jobs: 14
+Total number of background jobs: 4
 
 ````
 
 __Known Bugs and Problem Areas__
 * Command prompt is limited to 1024 characters.
+* Fork occasionally fails in a controlled manner in virtual environments with severely limited resources.  Most machines will be completely unable to reproduce this issue.
