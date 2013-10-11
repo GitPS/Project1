@@ -83,6 +83,14 @@ int split_input_into_jobs(char *input_str, int *num_jobs, job_t **loc_jobs)
 			(*num_jobs)++;
 		}
     }
+    
+    /* Cleanup */
+	if(types != NULL){
+		for(i = 0; i < jobs; i++){
+			types[i] = JOB_NULL;		
+		}
+		free(types);
+	}
 
     return 0;
 }
