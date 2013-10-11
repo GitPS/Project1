@@ -1,6 +1,5 @@
 mv /home/user/documents/file.txt /home/user/documents/backups/file.txt
 sudo apt-get install fail2ban
 ping -c 10 www.google.com & ping -c 10 www.yahoo.com & ping -c 10 www.bing.com &
-cd .. ; cd /home/user/documents ; cd /home/user/documents/backups
 youtube-dl http://youtu.be/jofNR_WkoCE
 
