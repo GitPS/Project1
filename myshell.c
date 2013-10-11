@@ -105,7 +105,7 @@ int start_interactive_shell(char * shell_name){
 						binary = NULL;
 					}					
 					// Exit the loop here.
-					break;
+					//break;
 				}
 				else if(strncmp("jobs", binary, strlen("jobs")) == 0){
 					if (jobs_b_size > 0){
@@ -172,6 +172,50 @@ int start_interactive_shell(char * shell_name){
 			}
 		}
 	} while(fgets_rtn != NULL);
+	
+	// Check for jobs still running in the background.
+	int still_running = 0;
+	if(jobs_b_size > 0){
+		// Print jobs.
+		int k;
+		pid_t rtn_pid;
+		int status = 0;
+		for(k = 0; k < jobs_b_size; k++){
+			// Job should not be displayed.
+			if(jobs_b[k].display == 0){
+				continue;
+			}
+			rtn_pid = waitpid(jobs_b[k].c_pid, &status, WNOHANG);
+			// Process is not finished.
+			if(rtn_pid == 0){
+				still_running++;
+			}
+			// Process has completed.
+			else{
+				jobs_b[k].display = 0;
+			}
+		}
+		if(still_running > 0){
+			printf("Waiting on %d background jobs to finish!\n", still_running);
+			fflush(NULL);
+			for(k = 0; k < jobs_b_size; k++){
+				if(jobs_b[k].display == 0){
+					continue;
+				}
+				rtn_pid = waitpid(jobs_b[k].c_pid, &status, WNOHANG);
+				// Wait for job
+				do{
+					sleep(1);
+					printf("Waiting on %d more jobs...\n", still_running);
+					fflush(NULL);
+					rtn_pid = waitpid(jobs_b[k].c_pid, &status, WNOHANG);
+				}while (0 == rtn_pid);
+				still_running--;
+			}
+			printf("All background jobs have finished!\n");	
+			fflush(NULL);
+		}					
+	}
 	
 	printf("\n");
 	printf("Total number of jobs: %d\n", total_jobs);
@@ -300,7 +344,6 @@ int start_batch_shell(char *filename, int *total_jobs, int *total_background_job
 			char *duplicate_command = NULL;
 			
 			duplicate_command = strdup(trim(loc_jobs[i].full_command));
-			trim(duplicate_command);
 
 			split_job_into_args( &(loc_jobs[i]) );
 			binary = strdup(loc_jobs[i].argv[0]);
@@ -380,6 +423,50 @@ int start_batch_shell(char *filename, int *total_jobs, int *total_background_job
 				binary = NULL;
 			}
 		}
+	}
+	
+	// Check for jobs still running in the background.
+	int still_running = 0;
+	if(jobs_b_size > 0){
+		// Print jobs.
+		int k;
+		pid_t rtn_pid;
+		int status = 0;
+		for(k = 0; k < jobs_b_size; k++){
+			// Job should not be displayed.
+			if(jobs_b[k].display == 0){
+				continue;
+			}
+			rtn_pid = waitpid(jobs_b[k].c_pid, &status, WNOHANG);
+			// Process is not finished.
+			if(rtn_pid == 0){
+				still_running++;
+			}
+			// Process has completed.
+			else{
+				jobs_b[k].display = 0;
+			}
+		}
+		if(still_running > 0){
+			printf("Waiting on %d background jobs to finish!\n", still_running);
+			fflush(NULL);
+			for(k = 0; k < jobs_b_size; k++){
+				if(jobs_b[k].display == 0){
+					continue;
+				}
+				rtn_pid = waitpid(jobs_b[k].c_pid, &status, WNOHANG);
+				// Wait for job
+				do{
+					sleep(1);
+					printf("Waiting on %d more jobs...\n", still_running);
+					fflush(NULL);
+					rtn_pid = waitpid(jobs_b[k].c_pid, &status, WNOHANG);
+				}while (0 == rtn_pid);
+				still_running--;
+			}
+			printf("All background jobs have finished!\n");	
+			fflush(NULL);
+		}					
 	}
 	
 	if(buffer != NULL){
