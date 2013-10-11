@@ -23,6 +23,10 @@
 /******************************
  * Structures
  ******************************/
+ 
+/*
+ * The possible types of jobs that can be run, JOB_NULL being a placeholder.
+ */
 enum job_type{
     JOB_BACKGROUND,
     JOB_FOREGROUND,
@@ -31,6 +35,9 @@ enum job_type{
 
 typedef enum job_type job_type;
 
+/*
+ * Structure to hold a single command and the type of the command.
+ */
 struct job_t {
     char * full_command;
     int argc;
@@ -39,6 +46,9 @@ struct job_t {
 };
 typedef struct job_t job_t;
 
+/*
+ * Structure to hold the additional data required for background jobs.
+ */
 struct background_job {
     pid_t c_pid;
     char * full_command;
@@ -76,12 +86,13 @@ int split_input_into_jobs(char *input_str, int *num_jobs, job_t **loc_jobs);
 int split_job_into_args(job_t *loc_job);
 
 /*
- * Returns 1 if the string is all whitespace, 0 otherwise.
+ * Returns 1 if the input string is all whitespace, 0 otherwise.
  */
 int is_whitespace(char *str);
 
 /* 
- * TODO
+ * Returns a pointer to the trimmed version of the input string.
+ * Returns the original *str pointer if the entire string is whitespace.
  */
 char *trim(char *str);
 
