@@ -198,19 +198,20 @@ int start_interactive_shell(char * shell_name){
 		if(still_running > 0){
 			printf("Waiting on %d background jobs to finish!\n", still_running);
 			fflush(NULL);
-			for(k = 0; k < jobs_b_size; k++){
-				if(jobs_b[k].display == 0){
-					continue;
-				}
-				rtn_pid = waitpid(jobs_b[k].c_pid, &status, WNOHANG);
-				// Wait for job
-				do{
-					sleep(1);
-					printf("Waiting on %d more jobs...\n", still_running);
-					fflush(NULL);
+			while(still_running > 0){
+				for(k = 0; k < jobs_b_size; k++){
+					if(jobs_b[k].display == 0){
+						continue;
+					}
 					rtn_pid = waitpid(jobs_b[k].c_pid, &status, WNOHANG);
-				}while (0 == rtn_pid);
-				still_running--;
+					if(rtn_pid != 0){
+						jobs_b[k].display = 0;
+						still_running--;
+					}				
+				}
+				sleep(1);
+				printf("Waiting on %d more jobs...\n", still_running);
+				fflush(NULL);
 			}
 			printf("All background jobs have finished!\n");	
 			fflush(NULL);
@@ -450,19 +451,20 @@ int start_batch_shell(char *filename, int *total_jobs, int *total_background_job
 		if(still_running > 0){
 			printf("Waiting on %d background jobs to finish!\n", still_running);
 			fflush(NULL);
-			for(k = 0; k < jobs_b_size; k++){
-				if(jobs_b[k].display == 0){
-					continue;
-				}
-				rtn_pid = waitpid(jobs_b[k].c_pid, &status, WNOHANG);
-				// Wait for job
-				do{
-					sleep(1);
-					printf("Waiting on %d more jobs...\n", still_running);
-					fflush(NULL);
+			while(still_running > 0){
+				for(k = 0; k < jobs_b_size; k++){
+					if(jobs_b[k].display == 0){
+						continue;
+					}
 					rtn_pid = waitpid(jobs_b[k].c_pid, &status, WNOHANG);
-				}while (0 == rtn_pid);
-				still_running--;
+					if(rtn_pid != 0){
+						jobs_b[k].display = 0;
+						still_running--;
+					}				
+				}
+				sleep(1);
+				printf("Waiting on %d more jobs...\n", still_running);
+				fflush(NULL);
 			}
 			printf("All background jobs have finished!\n");	
 			fflush(NULL);
