@@ -170,12 +170,6 @@ int start_interactive_shell(char * shell_name){
 				free(binary);
 				binary = NULL;
 			}
-			
-			/* Cleanup */
-			if(duplicate_command != NULL){
-				free(duplicate_command);
-				duplicate_command = NULL;
-			}
 		}
 	} while(fgets_rtn != NULL);
 	
@@ -384,11 +378,6 @@ int start_batch_shell(char *filename, int *total_jobs, int *total_background_job
 			if(binary != NULL){
 				free(binary);
 				binary = NULL;
-			}
-			/* Cleanup */
-			if(duplicate_command != NULL){
-				free(duplicate_command);
-				duplicate_command = NULL;
 			}
 		}
 	}
