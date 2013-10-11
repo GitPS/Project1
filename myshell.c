@@ -299,7 +299,7 @@ int start_batch_shell(char *filename, int *total_jobs, int *total_background_job
 			char *binary;
 			char *duplicate_command = NULL;
 			
-			duplicate_command = strdup(loc_jobs[i].full_command);
+			duplicate_command = strdup(trim(loc_jobs[i].full_command));
 			trim(duplicate_command);
 
 			split_job_into_args( &(loc_jobs[i]) );
